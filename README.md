@@ -1,6 +1,6 @@
 # Gemini Webpage Chrome Extension
 
-![Logo](icon.png)
+<img src="icon.png" alt="Logo" width="50" />
 
 ## Overview
 
