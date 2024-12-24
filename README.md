@@ -43,7 +43,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Author
 
 **Simon Liu 劉育維**  
-- GenAI GDE  
+- GenAI GDE from Taiwan
 - AI Engineer/Architect  
 - [LinkedIn Profile](https://linkedin.com/feed/simonliuyuwei)
 
