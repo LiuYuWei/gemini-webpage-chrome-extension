@@ -2,6 +2,14 @@
 
 <img src="icon.png" alt="Logo" width="50" />
 
+## Screenshots
+
+### Main Popup Interface
+<img src="img/snapshot-1.png" alt="Main Popup Interface" width="600" />
+
+### Config Setting
+<img src="img/snapshot-2.png" alt="Example Q&A Interaction" width="600" />
+
 ## Overview
 
 **Gemini Webpage Chrome Extension** is a tool designed to extract text content from the HTML `<body>` of any webpage and process it using Google Gemini for Q&A purposes. This extension allows users to seamlessly interact with webpage content, making it easy to query and understand.
