@@ -1,15 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Google Gemini Webpage Chatbot",
-  "version": "1.5",
+  "version": "1.6",
   "description": "A conversational chatbot extension for quick and easy interactions, now with website content integration.",
   "permissions": [
     "storage",
     "activeTab"
   ],
   "host_permissions": [
-    "https://generativelanguage.googleapis.com/*",
-    "https://*/*"
+    "https://generativelanguage.googleapis.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
