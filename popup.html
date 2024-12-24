@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Google Gemini Webpage Chatbot</title>
+</head>
+<body>
+  <!-- 聊天頁面 -->
+  <div id="chat-page">
+    <title-main>Google Gemini Webpage Chatbot</title-main>
+    <div id="chat-container">
+      <div id="chat-output"></div>
+      <div id="input-container">
+        <input type="text" id="user-input" placeholder="Type your message here..." />
+        <button id="send-button">Send</button>
+        <button id="reset-button">Reset</button>
+        <button id="open-settings-button">API Key Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- API Key 設定頁面 -->
+  <div id="settings-page" style="display: none;">
+    <title-main>Google Gemini Webpage Chatbot</title-main>
+    <div id="settings-container">
+      <title-sub>Gemini API Key Settings</title-sub>
+      <label for="api-key-input">Enter your Gemini API Key:</label>
+      <input type="password" id="api-key-input" placeholder="Your API Key" />
+      <p>You can get the key here: <a href="https://aistudio.google.com/app/apikey" target="_blank">https://aistudio.google.com/app/apikey</a></p>
+      <label for="model-select">Select Gemini Model:</label>
+      <select id="model-select">
+        <option value="gemini-2.0-flash-exp">gemini-2.0-flash-exp</option>
+        <option value="gemini-1.5-flash">gemini-1.5-flash</option>
+        <option value="gemini-1.5-flash-8B">gemini-1.5-flash-8B</option>
+      </select>
+      <div id="settings-buttons">
+        <button id="save-key-button">Save</button>
+        <button id="back-to-chat-button">Back</button>
+      </div>
+      <p id="status-message"></p>
+    </div>
+    <p class="footer-text">Made by Simon Liu, GenAI GDE</p>
+  </div>
+  <script src="marked.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Google Gemini Webpage Chatbot",
+  "version": "1.5",
+  "description": "A conversational chatbot extension for quick and easy interactions, now with website content integration.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gemini Chatbot"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "icon.png", "styles.css", "marked.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

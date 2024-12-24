@@ -1,0 +1,219 @@
+/* 通用樣式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* 聊天頁面 */
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 8px;
+}
+
+/* 聊天輸出框樣式 */
+#chat-output {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 350px;
+  width: 95%;
+}
+
+/* 消息樣式 */
+.message {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6; /* 增加行高，讓文字排版更清晰 */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 用戶消息樣式 */
+.user-message {
+  align-self: flex-end;
+  background-color: #007BFF;
+  color: white;
+}
+
+/* 機器人消息樣式 */
+.bot-message {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Markdown 特殊處理 */
+.bot-message pre {
+  background: #f6f8fa; /* 淡灰背景 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto; /* 橫向滾動支持 */
+  font-family: "Courier New", Courier, monospace; /* 使用等寬字體 */
+  font-size: 13px; /* 調整代碼塊字體大小 */
+  white-space: pre-wrap; /* 保持換行 */
+}
+
+/* 聊天輸入和按鈕 */
+#input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#send-button,
+#reset-button,
+#open-settings-button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#send-button {
+  background: #007BFF;
+  color: white;
+}
+
+#reset-button {
+  background: #FF3E3E;
+  color: white;
+}
+
+#open-settings-button {
+  background: #FF9900;
+  color: white;
+}
+
+/* 設定頁面 */
+#settings-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#api-key-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 97%;
+}
+
+/* 下拉選單樣式 */
+#model-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  background-color: white;
+  appearance: none; /* 隱藏默認樣式 */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpath d='M6 9l6 6L6 9'/ %3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+#settings-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#save-key-button {
+  background: #007BFF;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#back-to-chat-button {
+  background: #FF9900;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#status-message {
+  font-size: 12px;
+  color: green;
+  margin-top: 5px;
+}
+
+.chatbot-button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.footer-text {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 在 styles.css 中新增動畫樣式 */
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.typing-indicator {
+  display: inline-block;
+  font-size: 1.5em;
+  animation: blink 1s infinite;
+}
+
+/* Title styles */
+title-main {
+  display: block;
+  font-size: 18px; /* Ensure proper font size */
+  font-weight: bold;
+  text-align: center; /* Center the title */
+  margin: 20px 0 10px 0; /* Add a top margin to avoid cutting */
+  color: #333; /* Use a dark gray color for contrast */
+}
+
+title-sub {
+  display: block;
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Use bold font */
+  color: #555; /* Lighter gray color */
+  text-align: center; /* Center the subtitle */
+  margin: 10px 0; /* Add a vertical margin for spacing */
+}
