@@ -1,67 +1,49 @@
-# Gemini Webpage Chrome Extension
+# Gemini 網頁 Chrome 擴充功能
+(內容由 AI 產生再做修改)
 
-## Screenshots
+<img src="img/snapshot-1.png" alt="主彈出介面" width="1024" />
 
-### Main Popup Interface
-<img src="img/snapshot-1.png" alt="Main Popup Interface" width="600" />
+## 概述
 
-### Config Setting
-<img src="img/snapshot-2.png" alt="Example Q&A Interaction" width="600" />
+**Gemini 網頁 Chrome 擴充功能** 是一款工具，能從任何網頁的 HTML `<body>` 中提取文字內容，並使用 Google Gemini 進行問答處理。此擴充功能讓使用者能夠無縫地與網頁內容互動，輕鬆進行查詢與理解。
 
-## Overview
+## 功能
 
-Gemini Webpage Chrome Extension is a tool designed to extract text content from the HTML <body> of any webpage and process it using Google Gemini for Q&A purposes. This extension allows users to seamlessly interact with webpage content, making it easy to query and understand.
+- 從網頁的 HTML body 中提取文字內容。
+- 使用 Google Gemini 根據網頁內容進行摘要、分析或回答問題。
+- 用一個按鍵彈出式操作介面。
 
-Gemini Webpage Chrome Extension 是一款工具，可從任何網頁的 HTML <body> 中提取文字內容，並使用 Google Gemini 進行問答處理。此擴充功能讓使用者能夠無縫地與網頁內容互動，輕鬆查詢並理解內容。
+## 安裝
 
-## Features | 功能
-
-- Extract text from the HTML body of webpages.
-  - 從網頁的 HTML 主體中提取文字內容。
-
-- Use Google Gemini to summarize, analyze, or answer questions based on webpage content.
-  - 使用 Google Gemini 根據網頁內容進行摘要、分析或回答問題。
-
-- User-friendly popup interface.
-  - 友好的彈出式介面。
-
-- Works on any website with a single click.
-  - 只需一鍵即可在任何網站上使用。
-
-## Installation | 安裝
-
-1. Clone the repository:
-   - 複製儲存庫：
-
+1. 複製專案庫：
    ```bash
-   git clone https://github.com/LiuYuWei/gemini-webpage-chrome-extension.git
+   git clone https://github.com/LiuYuWei/gemini-webpage-chrome-extension
    ```
+   <img src="img/snapshot-2.png" alt="主彈出介面" width="1024" />
 
-2. Open Google Chrome and navigate to chrome://extensions/.
-   - 打開 Google Chrome 並進入 chrome://extensions/ 。
+2. 打開 Google Chrome 並進入 `chrome://extensions/`，並且啟用「開發者模式」（右上角切換）。
+   <img src="img/snapshot-3.png" alt="主彈出介面" width="1024" />
+   
+3. 點擊「載入未封裝項目」，然後選擇專案目錄，匯入完成後，擴充功能將顯示在工具列上。
+   <img src="img/snapshot-4.png" alt="主彈出介面" width="1024" />
 
-3. Enable Developer mode (toggle in the top right corner).
-   - 啟用 開發者模式（右上角的切換）。
+3. 點擊「API Config Settings」，並且點選 [API Key 連結](https://aistudio.google.com/app/apikey)
+   <img src="img/snapshot-5.png" alt="主彈出介面" width="1024" />
 
-4. Click Load unpacked and select the project directory.
-   - 點擊 載入未封裝項目 並選擇專案目錄。
+4. 申請一個規定額度內免費的 Google Gemini API Key ，並且填寫回去設定檔中
+   <img src="img/snapshot-6.png" alt="主彈出介面" width="1024" />
+   <img src="img/snapshot-7.png" alt="主彈出介面" width="1024" />
 
-5. The extension will appear in your toolbar.
-   - 擴充功能將顯示在您的工具列上。
+5. 你就可以開始對網頁進行問答。
+   <img src="img/snapshot-8.png" alt="主彈出介面" width="1024" />
 
-## Usage | 使用方法
+## 使用方法
 
-1. Navigate to any webpage.
-   - 前往任何網頁。
+1. 瀏覽至任何網頁。
+   
+2. 在彈出的介面中，對聊天室進行問答
 
-2. Click on the Gemini Webpage Chrome Extension icon in the toolbar.
-   - 點擊工具列中的雙子星網頁 Chrome 擴充功能圖示。
-
-3. In the extension popup, click the round button in the bottom-right corner to set your API Key.
-   - 在擴充功能彈出介面中，點擊右下角的圓形按鈕以設定您的 API 金鑰。
-
-4. Once the API Key is set, you can ask questions or perform analysis on the webpage content.
-   - 設定 API 金鑰後，您可以針對網頁內容進行提問或分析。
+PS: 不是所有網站都能夠讓 Chatbot 問答，本 Chrome Extension 擴充功能不保證任何事情。
 
 ## License | 授權
 
